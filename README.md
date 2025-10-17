@@ -1,3 +1,41 @@
+# Solo Tech Docs
+
+🦜 **Welcome!** This repository contains the documentation build pipeline for Solo Tech model finetuning as well as deployment for HuggingFace's LeRobot SO-101.
+
+* 🏠 [`docs.getsolo.tech`](https://docs.getsolo.tech/) is our docs home, centralizing finetuned Solo Server models. This site is hosted on [Mintlify](https://mintlify.com).
+
+> [!IMPORTANT]
+>
+> * The LangSmith API and [SDK](https://github.com/langchain-ai/langsmith-sdk) references are not yet consolidated to this repo. Visit their documentation:
+>   * [`HTTP API Reference`](https://api.smith.langchain.com/redoc)
+>   * [`Python SDK reference`](https://docs.smith.langchain.com/reference/python/reference)
+>   * [`JavaScript/TypeScript SDK reference`](https://docs.smith.langchain.com/reference/js)
+
+---
+
+## Overview
+
+```text
+# --- docs.getsolo.tech ----------------------------------------------
+ai-tools/                 # Built docs (do not edit)
+api-reference/                 # Build pipeline source code
+essentials/                  # Helper scripts
+images/                      # Source documentation files (edit these)
+    labs/                 # LangChain Labs docs
+    langsmith/            # LangSmith docs
+    oss/                  # LangChain, LangGraph, and integrations docs
+    docs.json             # Mintlify site configuration
+logo/                    # Test files for the pipeline
+snippets/                # Build targets
+LICENSE           # Dependencies
+README.md           # Dependencies
+development.mdx
+docs.json
+favicon.svg
+index.mdx
+quickstart.mdx
+
+
 # Mintlify Starter Kit
 
 Use the starter kit to get your docs deployed and ready to customize.

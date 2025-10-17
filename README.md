@@ -17,23 +17,19 @@
 
 ```text
 # --- docs.getsolo.tech ----------------------------------------------
-ai-tools/                 # Built docs (do not edit)
-api-reference/                 # Build pipeline source code
-essentials/                  # Helper scripts
-images/                      # Source documentation files (edit these)
-    labs/                 # LangChain Labs docs
-    langsmith/            # LangSmith docs
-    oss/                  # LangChain, LangGraph, and integrations docs
-    docs.json             # Mintlify site configuration
-logo/                    # Test files for the pipeline
-snippets/                # Build targets
-LICENSE           # Dependencies
-README.md           # Dependencies
-development.mdx
-docs.json
-favicon.svg
-index.mdx
-quickstart.mdx
+ai-tools/                # Claude-code, Cursor, Windsurf info
+api-reference/           # OpenAI ollama API reference
+essentials/              # Navigation plus images & settings
+images/                  # Mintlify visuals
+logo/                    # 
+snippets/                # 
+LICENSE                  # Dependencies
+README.md                # Installation insstructions
+development.mdx          # Based on Mintlify template
+docs.json                #
+favicon.svg              #
+index.mdx                #
+quickstart.mdx           #
 
 
 # Mintlify Starter Kit

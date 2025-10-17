@@ -4,13 +4,6 @@
 
 * 🏠 [`docs.getsolo.tech`](https://docs.getsolo.tech/) is our docs home, centralizing finetuned Solo Server models. This site is hosted on [Mintlify](https://mintlify.com).
 
-> [!IMPORTANT]
->
-> * The LangSmith API and [SDK](https://github.com/langchain-ai/langsmith-sdk) references are not yet consolidated to this repo. Visit their documentation:
->   * [`HTTP API Reference`](https://api.smith.langchain.com/redoc)
->   * [`Python SDK reference`](https://docs.smith.langchain.com/reference/python/reference)
->   * [`JavaScript/TypeScript SDK reference`](https://docs.smith.langchain.com/reference/js)
-
 ---
 
 ## Overview

@@ -1,70 +1,52 @@
-# Solo Tech Docs
+# Solo Tech
 
 🦜 **Welcome!** This repository contains the documentation build pipeline for Solo Tech model finetuning as well as deployment for HuggingFace's LeRobot SO-101.
 
-* 🏠 [`docs.getsolo.tech`](https://docs.getsolo.tech/) is our docs home, centralizing finetuned Solo Server models. This site is hosted on [Mintlify](https://mintlify.com).
+\* 🏠 `docs.getsolo.tech`](https://docs.getsolo.tech/) is our docs home, centralizing finetuned Solo Server models. This site is hosted on [Mintlify](https://mintlify.com).
 
----
-
-## Overview
-
-```text
-# --- docs.getsolo.tech ----------------------------------------------
-ai-tools/                # Claude-code, Cursor, Windsurf info
-api-reference/           # OpenAI ollama API reference
-essentials/              # Navigation plus images & settings
-images/                  # Mintlify visuals
-logo/                    # 
-snippets/                # 
-LICENSE                  # Dependencies
-README.md                # Installation insstructions
-development.mdx          # Based on Mintlify template
-docs.json                #
-favicon.svg              #
-index.mdx                #
-quickstart.mdx           #
-
-
-# Mintlify Starter Kit
-
-Use the starter kit to get your docs deployed and ready to customize.
-
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
-
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
-
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+[**Follow the full installation guide**](https://github.com/GetSoloTech/solo-server/blob/main/README.md)
 
 ## Development
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+Install the uv package manager to acquire solo-server. The following block contains the full installation instructions.
 
 ```
-npm i -g mint
+# uv package manager installation, skip if uv already exists
+# Mac & Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh  
+# Windows Powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+# Create Python virtual environment, recommended Python version 3.12
+uv venv --python 3.12
+# Mac & Linux
+source .venv/bin/activate
+# Windows
+source .venv/scripts/activate
+
+#Choose one of the following for solo-server installation
+#1. Install solo server from PyPI python manager
+uv pip install solo-server
+
+#2. Install solo server from source
+git clone https://github.com/GetSoloTech/solo-server.git
+cd solo-server
+uv pip install -e .
+
+# Solo commands
+solo --help
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+Alternatively, you can perform a quick, automated installation for Mac.
 
 ```
-mint dev
+# Clone the repository
+git clone https://github.com/GetSoloTech/solo-server.git
+cd solo-server
+
+# Make the installation script executable
+chmod +x install_mac.sh
+
+# Run the automated installation
+./install_mac.sh
 ```
-
-View your local preview at `http://localhost:3000`.
-
-## Publishing changes
-
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)

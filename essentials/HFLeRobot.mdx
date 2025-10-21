@@ -1,0 +1,18 @@
+## Interactive Lerobot With Solo Server
+Find more details here: [Solo Robo Documentation](solo_server/commands/robots/lerobot/README.md) 
+
+```bash
+# Motors (both) → Calibrate (both) → Teleop
+solo robo --type lerobot --motors both
+solo robo --type lerobot --calibrate both
+solo robo --type lerobot --teleop
+
+# Record a new local dataset with prompts
+solo robo --type lerobot --record
+
+# Train Diffusion Policy on a recorded dataset and push to Hub
+solo robo --type lerobot --train
+
+# Inference with a hub model id (with optional Teleop override)
+solo robo --type lerobot --inference
+```

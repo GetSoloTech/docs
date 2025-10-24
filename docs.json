@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Solo Docs",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -16,53 +16,41 @@
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "guide/intro",
+              "guide/solo-server"
             ]
           },
           {
             "group": "Customization",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "guide/custom-modules",
+              "guide/deploying-on-k8s"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Additional Info",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "guide/telemetry",
+              "guide/best-practices",
+              "guide/migration"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "API Reference",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Solo Server API",
             "pages": [
-              "api-reference/introduction"
+              "api/solo-server/introduction",
+              "api/solo-server/endpoints"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "FastMCP API",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api/fastmcp/introduction"
             ]
           }
         ]
@@ -71,14 +59,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "GitHub",
+          "href": "https://github.com/GetSoloTech",
+          "icon": "github"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Solo Website",
+          "href": "https://solotech.ai",
+          "icon": "globe"
         }
       ]
     }
@@ -90,33 +78,27 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Solo Server",
+        "href": "https://github.com/GetSoloTech/solo-server"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Solovision",
+      "href": "https://github.com/GetSoloTech/solovision"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/GetSoloTech",
+      "github": "https://github.com/GetSoloTech",
+      "linkedin": "https://www.linkedin.com/company/get-solo-tech"
     }
   }
 }

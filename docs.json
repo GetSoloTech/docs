@@ -24,70 +24,17 @@
       ]
     },
     {
-      "group": "Tutorials",
+      "group": "Solo Robo",
       "pages": [
-        "il_robots",
-        "cameras",
-        "integrate_hardware"
+        "calibrate",
+        "teleop",
+        "record"
       ]
     },
     {
-      "group": "Datasets",
+      "group": "SO-101",
       "pages": [
-        "lerobot-dataset-v3",
-        "porting_datasets_v3",
-        "using_dataset_tools"
-      ]
-    },
-    {
-      "group": "Policies",
-      "pages": [
-        "act",
-        "smolvla",
-        "pi0"
-      ]
-    },
-    {
-      "group": "Simulation",
-      "pages": [
-        "il_sim",
-        "libero",
-        "metaworld"
-      ]
-    },
-    {
-      "group": "Robot Processors",
-      "pages": [
-        "introduction_processors",
-        "debug_processor_pipeline",
-        "implement_your_own_processor",
-        "processors_robots_teleop"
-      ]
-    },
-    {
-      "group": "Robots",
-      "pages": [
-        "so101"
-      ]
-    },
-    {
-      "group": "Teleoperators",
-      "pages": [
-        "phone_teleop"
-      ]
-    },
-    {
-      "group": "Resources",
-      "pages": [
-        "notebooks",
-        "feetech"
-      ]
-    },
-    {
-      "group": "About",
-      "pages": [
-        "contributing",
-        "backwardcomp"
+        "assembly"
       ]
     }
   ]},

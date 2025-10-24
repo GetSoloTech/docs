@@ -22,11 +22,7 @@
       "pages": [
         "il_robots",
         "cameras",
-        "integrate_hardware",
-        "hilserl",
-        "hilserl_sim",
-        "async",
-        "multi_gpu_training"
+        "integrate_hardware"
       ]
     },
     {
@@ -67,12 +63,7 @@
     {
       "group": "Robots",
       "pages": [
-        "so101",
-        "so100",
-        "koch",
-        "lekiwi",
-        "hope_jr",
-        "reachy2"
+        "so101"
       ]
     },
     {

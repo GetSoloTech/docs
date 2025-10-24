@@ -9,91 +9,93 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "guide/intro",
-              "guide/solo-server"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "guide/custom-modules",
-              "guide/deploying-on-k8s"
-            ]
-          },
-          {
-            "group": "Additional Info",
-            "pages": [
-              "guide/telemetry",
-              "guide/best-practices",
-              "guide/migration"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "Solo Server API",
-            "pages": [
-              "api/solo-server/introduction",
-              "api/solo-server/endpoints"
-            ]
-          },
-          {
-            "group": "FastMCP API",
-            "pages": [
-              "api/fastmcp/introduction"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "GitHub",
-          "href": "https://github.com/GetSoloTech",
-          "icon": "github"
-        },
-        {
-          "anchor": "Solo Website",
-          "href": "https://solotech.ai",
-          "icon": "globe"
-        }
+  "groups": [
+    {
+      "group": "Get started",
+      "pages": [
+        "index",
+        "installation"
+      ]
+    },
+    {
+      "group": "Tutorials",
+      "pages": [
+        "il_robots",
+        "cameras",
+        "integrate_hardware",
+        "hilserl",
+        "hilserl_sim",
+        "async",
+        "multi_gpu_training"
+      ]
+    },
+    {
+      "group": "Datasets",
+      "pages": [
+        "lerobot-dataset-v3",
+        "porting_datasets_v3",
+        "using_dataset_tools"
+      ]
+    },
+    {
+      "group": "Policies",
+      "pages": [
+        "act",
+        "smolvla",
+        "pi0",
+        "pi05",
+        "groot"
+      ]
+    },
+    {
+      "group": "Simulation",
+      "pages": [
+        "il_sim",
+        "libero",
+        "metaworld"
+      ]
+    },
+    {
+      "group": "Robot Processors",
+      "pages": [
+        "introduction_processors",
+        "debug_processor_pipeline",
+        "implement_your_own_processor",
+        "processors_robots_teleop"
+      ]
+    },
+    {
+      "group": "Robots",
+      "pages": [
+        "so101",
+        "so100",
+        "koch",
+        "lekiwi",
+        "hope_jr",
+        "reachy2"
+      ]
+    },
+    {
+      "group": "Teleoperators",
+      "pages": [
+        "phone_teleop"
+      ]
+    },
+    {
+      "group": "Resources",
+      "pages": [
+        "notebooks",
+        "feetech"
+      ]
+    },
+    {
+      "group": "About",
+      "pages": [
+        "contributing",
+        "backwardcomp"
       ]
     }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Solo Server",
-        "href": "https://github.com/GetSoloTech/solo-server"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Solovision",
-      "href": "https://github.com/GetSoloTech/solovision"
-    }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view"
-    ]
-  },
+  ]},
   "footer": {
     "socials": {
       "x": "https://x.com/GetSoloTech",

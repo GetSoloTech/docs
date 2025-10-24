@@ -11,10 +11,16 @@
   "navigation": {
   "groups": [
     {
-      "group": "Get started",
+      "group": "Get Started",
       "pages": [
-        "index",
-        "installation"
+        "index"
+      ]
+    },
+    {
+      "group": "Setup",
+      "pages": [
+        "uv env",
+        "installation"      
       ]
     },
     {
@@ -38,9 +44,7 @@
       "pages": [
         "act",
         "smolvla",
-        "pi0",
-        "pi05",
-        "groot"
+        "pi0"
       ]
     },
     {

@@ -8,19 +8,20 @@
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-  "groups": [
+  "navigation": [
     {
       "group": "Get Started",
       "pages": [
-        "index"
+        "index",
+        "GetStarted"
       ]
     },
     {
       "group": "Setup",
       "pages": [
         "uv env",
-        "installation"      
+        "installation",
+        "development"
       ]
     },
     {
@@ -36,8 +37,14 @@
       "pages": [
         "assembly"
       ]
+    },
+    {
+      "group": "Essentials",
+      "pages": [
+        "essentials/HFLeRobot"
+      ]
     }
-  ]},
+  ],
   "footer": {
     "socials": {
       "x": "https://x.com/GetSoloTech",

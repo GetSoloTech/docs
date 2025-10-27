@@ -6,46 +6,58 @@ description: "Complete installation guide for Solo Server"
 # Full Installation Instructions
 
 ## uv package manager installation, skip if uv already exists 
-Mac & Linux
-```
+
+**Mac & Linux**
+```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh  
 ```
-Windows Powershell
-```
+
+**Windows Powershell**
+```powershell
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
-Create Python virtual environment, recommended Python version 3.12
-```
+
+**Create Python virtual environment, recommended Python version 3.12**
+
+```bash
 uv venv --python 3.12
 ```
-Mac & Linux
-```
+
+**Mac & Linux**
+```bash
 source .venv/bin/activate
 ```
-Windows
-```
+
+**Windows**
+```bash
 source .venv/scripts/activate
 ```
 
-Choose one of the following for solo-server installation
-1.Install solo server from PyPI python manager
-```
+**Choose one of the following for solo-server installation**
+
+**1. Install solo server from PyPI python manager**
+
+```bash
 uv pip install solo-server
 ```
 
-2.Install solo server from source
-```
+**2. Install solo server from source**
+
+```bash
 git clone https://github.com/GetSoloTech/solo-server.git
 cd solo-server
 uv pip install -e .
 ```
-Solo commands
-```
+
+**Solo commands**
+
+```bash
 solo --help
 ```
 
-Alternatively, you can perform a quick, automated installation for Mac.
-```
+**Alternatively, you can perform a quick, automated installation for Mac.**
+
+```bash
 git clone https://github.com/GetSoloTech/solo-server.git
 cd solo-server
 chmod +x install_mac.sh

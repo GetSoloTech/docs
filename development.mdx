@@ -7,25 +7,23 @@ description: "Run solo-server models"
 
 Install the uv package manager to acquire solo-server. The following block contains the full installation instructions.
 
-```
+```bash
 solo --help
-                                                                                                           
-╭─ Commands ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ setup      Set up Solo Server environment with interactive prompts and saves configuration to config.json.                                                                                                          │
-│ robo       Robotics operations: motor setup, calibration, teleoperation, data recording, training, and inference                                                                                                    │
-│ serve      Start a model server with the specified model.                                                                                                                                                           │
-│ status     Check running models, system status, and configuration.                                                                                                                                                  │
-│ list       List all downloaded models available in HuggingFace cache and Ollama.                                                                                                                                    │
-│ test       Test if the Solo server is running correctly. Performs an inference test to verify server functionality.                                                                                                 │
-│ stop       Stops Solo Server services. You can specify a server type with 'ollama', 'vllm', or 'llama.cpp'                                                                                                          │
-│            Otherwise, all Solo services will be stopped.                                                                                                                                                            │
-│ download   Downloads a Hugging Face model using the huggingface repo id.                                                                                                                                            │
-╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ```
+
+**Available Commands:**
+- `setup` - Set up Solo Server environment with interactive prompts and saves configuration to config.json
+- `robo` - Robotics operations: motor setup, calibration, teleoperation, data recording, training, and inference
+- `serve` - Start a model server with the specified model
+- `status` - Check running models, system status, and configuration
+- `list` - List all downloaded models available in HuggingFace cache and Ollama
+- `test` - Test if the Solo server is running correctly. Performs an inference test to verify server functionality
+- `stop` - Stops Solo Server services. You can specify a server type with 'ollama', 'vllm', or 'llama.cpp'. Otherwise, all Solo services will be stopped
+- `download` - Downloads a Hugging Face model using the huggingface repo id
 
 ## **Start server with SML models**
 
-```
+```bash
 # Note that you will need Docker for solo serve
 solo setup
 solo serve --server ollama --model llama3.2:1b

@@ -6,27 +6,31 @@ description: "Install Solo Server"
 # Installation
 
 ## Create Python virtual environment, recommended Python version 3.12
+
+```bash
 uv venv --python 3.12
 # Mac & Linux
 source .venv/bin/activate
 # Windows
 source .venv/scripts/activate
-
+```
 
 Choose one of the following for solo-server installation
-1.Install solo server from PyPI python manager
-```
+
+**1. Install solo server from PyPI python manager**
+```bash
 uv pip install solo-server
 ```
 
-2.Install solo server from source 
-```
+**2. Install solo server from source** 
+```bash
 git clone https://github.com/GetSoloTech/solo-server.git
 cd solo-server
 uv pip install -e .
 ```
-Solo commands
 
-```
+**Solo commands**
+
+```bash
 solo --help
 ```

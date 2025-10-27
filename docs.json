@@ -19,7 +19,7 @@
     {
       "group": "Setup",
       "pages": [
-        "uv env",
+        "uv-env",
         "installation",
         "development"
       ]
@@ -41,6 +41,7 @@
     {
       "group": "Essentials",
       "pages": [
+        "lerobot-dataset",
         "essentials/HFLeRobot"
       ]
     }

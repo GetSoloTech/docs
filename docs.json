@@ -8,44 +8,51 @@
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
-  "navigation": [
-    {
-      "group": "Get Started",
-      "pages": [
-        "index",
-        "GetStarted"
-      ]
-    },
-    {
-      "group": "Setup",
-      "pages": [
-        "uv-env",
-        "installation",
-        "development"
-      ]
-    },
-    {
-      "group": "Solo Robo",
-      "pages": [
-        "calibrate",
-        "teleop",
-        "record"
-      ]
-    },
-    {
-      "group": "SO-101",
-      "pages": [
-        "assembly"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "lerobot-dataset",
-        "essentials/HFLeRobot"
-      ]
-    }
-  ],
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "index",
+              "GetStarted"
+            ]
+          },
+          {
+            "group": "Setup",
+            "pages": [
+              "uv-env",
+              "installation",
+              "development"
+            ]
+          },
+          {
+            "group": "Solo Robo",
+            "pages": [
+              "calibrate",
+              "teleop",
+              "record"
+            ]
+          },
+          {
+            "group": "SO-101",
+            "pages": [
+              "assembly"
+            ]
+          },
+          {
+            "group": "Essentials",
+            "pages": [
+              "lerobot-dataset",
+              "essentials/HFLeRobot"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "footer": {
     "socials": {
       "x": "https://x.com/GetSoloTech",

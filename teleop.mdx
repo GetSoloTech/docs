@@ -5,4 +5,20 @@ description: "Control your robot with teleoperation"
 
 # Teleoperation
 
-Coming soon - documentation for teleoperation features.
+Teleoperate the follower arm using the leader arm. Requires both arms calibrated.
+
+```bash
+solo robo --type lerobot --teleop
+```
+
+### Interactive flow
+- If saved Teleop settings exist, choose to reuse or enter new ones.
+- Confirm or detect `leader_port` and `follower_port`, confirm `robot_type`.
+- Optionally set up cameras (OpenCV/RealSense), assign viewing angles, and select which cameras to display.
+- Optionally choose/confirm `leader_id` and `follower_id`.
+- Teleoperation starts; move the leader arm to control the follower.
+
+### Tips/Notes
+- If a connection error occurs, the tool can auto-detect new ports and retry once.
+- Camera setup is optional; if no cameras are found or selected, Teleop will still work.
+- Press Ctrl+C to stop Teleop at any time.

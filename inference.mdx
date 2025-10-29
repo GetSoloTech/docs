@@ -1,0 +1,40 @@
+---
+title: "Inference"
+description: "so101 inference with hugging face models"
+---
+
+
+# Inference
+
+Run a trained policy on the follower arm. Requires the follower to be calibrated. Teleoperation override is optional if the leader is calibrated and available.
+
+```bash
+solo robo --type lerobot --inference
+```
+
+### Interactive flow
+- Reuse saved Inference settings or enter new ones.
+- Validates calibrated follower; optionally enables Teleop override if leader is calibrated.
+- Prompts to authenticate with HuggingFace (required to download remote models).
+- Enter `policy_path` (HuggingFace model ID or local path), task description, and duration.
+- Set up cameras (optional) and start inference.
+
+### Tips/Notes
+- If Teleop override is enabled, moving the leader arm temporarily overrides the policy.
+- Same keyboard controls apply as in recording (→/←/ESC) for session control.
+- If ports change, the tool can detect new ports and retry once.
+
+---
+
+## Cameras and ports
+
+- **Ports**: Auto-detection works on Windows and Unix. If `pyserial` is missing, it is installed automatically. If the arm was already connected, you'll be guided to unplug/replug to identify the correct port.
+- **Cameras**: Both OpenCV and RealSense cameras are supported. RealSense requires `pyrealsense2`. You can map each camera to a viewing angle and pick which ones to display during Teleop/Record/Inference.
+
+## Troubleshooting
+
+- **Connection failed / wrong port**: The tool will attempt to re-detect ports and retry once. If it still fails, unplug/replug each arm and re-run the mode.
+- **Dataset already exists**: You will be prompted to resume or rename. Resuming continues appending episodes to the existing dataset.
+- **HuggingFace authentication required**: Needed for downloading trained policies (Inference) and optionally for pushing datasets/models (Record/Train).
+- **Windows symlink warnings**: Symlink warnings are suppressed for HF Hub downloads by the tool when needed.
+- **No cameras detected**: You can proceed without cameras; functionality remains available.

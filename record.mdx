@@ -3,6 +3,25 @@ title: "Recording"
 description: "Record robot demonstrations"
 ---
 
-# Recording
+# Record
+Record datasets for training while teleoperating the follower. Requires both arms calibrated.
 
-Coming soon - documentation for recording demonstrations.
+```bash
+solo robo --type lerobot --record
+```
+
+### Interactive flow
+- Reuse saved Recording settings or enter new ones.
+- Confirm `robot_type`, `leader_port`, `follower_port`, and IDs, then set up cameras.
+- Choose whether to push to HuggingFace Hub; if yes, you will be prompted to authenticate.
+- Enter dataset repository name; if it already exists, choose whether to resume or rename.
+- Enter task description, episode duration, and number of episodes.
+- Recording starts and follows LeRobot's standard UI/controls.
+
+### Tips/Notes
+- Use `local/<name>` or a bare `<name>` to keep datasets local; pushing to Hub is optional.
+- Controls during recording:
+  - Right Arrow (→): early stop/reset and move to next
+  - Left Arrow (←): cancel current episode and re-record
+  - Escape (ESC): stop session, encode videos, and upload (if enabled)
+- If ports change mid-session, the tool can detect new ports and retry once.

@@ -1,0 +1,29 @@
+---
+title: "Motors"
+description: "Setup motors for calibration"
+---
+
+# Motors
+
+Most arms provided by Solo Tech already have motor IDs set up, so you can usually skip this step and proceed directly to calibration. Only run this command if you encounter a "missing motor ids" error or if you need to reassign motor IDs for the leader and/or follower arm.
+
+```bash
+# Setup both arms (default)
+solo robo --type lerobot --motors
+
+# Setup only leader
+solo robo --type lerobot --motors leader
+
+# Setup only follower
+solo robo --type lerobot --motors follower
+```
+
+### Interactive flow
+- Select or reuse the **robot type** (`SO100` or `SO101`).
+- Auto-detect the **leader** and/or **follower** port(s); unplug/replug guidance is provided if needed.
+- For each selected arm, the tool launches LeRobot's device and runs `setup_motors()`.
+
+### Tips/Notes
+- You will be prompted to connect the arm when the tool searches for its port, so it's best to connect and power on the arm when instructed during the process.
+- If auto-detection finds multiple ports, you can select the correct one from a list.
+- After successful setup, you'll see a success message and a hint to run calibration next.

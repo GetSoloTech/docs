@@ -1,15 +1,31 @@
 ---
-title: "Calibration"
-description: "Setup SO-101"
+title: "Calibrate"
+description: "Ensure proper calibration for teleop"
 ---
 
 # Calibration
 
-## Motor Setup
+Calibrate the leader and/or follower arm(s) after motor IDs are set.
 
-Once the so101 follower and leader arms have been assembled, we can setup the motors.
+```bash
+# Calibrate both
+solo robo --type lerobot --calibrate both
 
+# Calibrate only leader
+solo robo --type lerobot --calibrate leader
+
+# Calibrate only follower
+solo robo --type lerobot --calibrate follower
 ```
-solo robo --type lerobot --motors both
-```
+
+### Interactive flow
+- Optionally reuse saved `robot_type` and ports or re-detect them.
+- Choose or confirm `leader_id` and `follower_id` (stored for later reuse).
+- For each arm selected, LeRobot's calibration is launched and you follow on-screen instructions.
+
+### Tips/Notes
+- Calibrate in a safe, clear workspace; follow the on-screen instructions carefully.
+- If either arm fails to calibrate, you can rerun calibration for that arm only.
+- Once both arms are calibrated, you're ready for Teleop and Recording.
+
 

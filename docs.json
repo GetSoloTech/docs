@@ -31,9 +31,11 @@
           {
             "group": "Solo Robo",
             "pages": [
+              "motors",
               "calibrate",
               "teleop",
-              "record"
+              "record",
+              "inference"
             ]
           },
           {
@@ -45,8 +47,7 @@
           {
             "group": "Essentials",
             "pages": [
-              "lerobot-dataset",
-              "essentials/HFLeRobot"
+              "essentials/Quickstart"
             ]
           }
         ]

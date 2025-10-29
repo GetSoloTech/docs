@@ -1,0 +1,28 @@
+---
+title: "Train"
+description: "Train lerobot"
+---
+
+# Train
+
+Train a policy on recorded data.
+
+```bash
+solo robo --type lerobot --train
+```
+
+### Interactive flow
+- Reuse saved Training settings or enter new ones.
+- Provide `dataset_repo_id` (local or Hub dataset ID).
+- Select policy type: SmolVLA, ACT, PI0, TDMPC, or Diffusion Policy.
+- Set training steps and batch size.
+- Choose output directory; if it exists, pick: resume, overwrite, or new directory.
+- Choose whether to push the trained model to HuggingFace Hub (prompts for auth and repo name).
+- Optionally enable Weights & Biases logging (prompts to login and set project).
+- Training starts using LeRobot's training pipeline.
+
+### Tips/Notes
+- Some policies can start from a pretrained checkpoint; SmolVLA defaults to `lerobot/smolvla_base` if not provided.
+- Video backend auto-falls back to PyAV if TorchCodec is unavailable.
+- Checkpoints are saved regularly; you can resume later if needed.
+- Press Ctrl+C to stop early; partial checkpoints may be saved.

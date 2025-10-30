@@ -1,52 +1,30 @@
-# Solo Tech
+# 🧪 phospho documentation
 
-🦜 **Welcome!** This repository contains the documentation build pipeline for Solo Tech model finetuning as well as deployment for HuggingFace's LeRobot SO-101.
+This is the user-facing documentation of the [phospho platform](https://platform.phospho.ai)
 
-\* 🏠 `docs.getsolo.tech`](https://docs.getsolo.tech/) is our docs home, centralizing finetuned Solo Server models. This site is hosted on [Mintlify](https://mintlify.com).
+- The deployed docs [are available here.](https://docs.phospho.ai/welcome)
+- The open source code of the platform [is available here.](https://github.com/phospho-app/phospho)
 
-[**Follow the full installation guide**](https://github.com/GetSoloTech/solo-server/blob/main/README.md)
+## Local development
 
-## Development
+The docs use Mintlify for deployment. Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
 
-Install the uv package manager to acquire solo-server. The following block contains the full installation instructions.
-
-```
-# uv package manager installation, skip if uv already exists
-# Mac & Linux
-curl -LsSf https://astral.sh/uv/install.sh | sh  
-# Windows Powershell
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-
-# Create Python virtual environment, recommended Python version 3.12
-uv venv --python 3.12
-# Mac & Linux
-source .venv/bin/activate
-# Windows
-source .venv/scripts/activate
-
-#Choose one of the following for solo-server installation
-#1. Install solo server from PyPI python manager
-uv pip install solo-server
-
-#2. Install solo server from source
-git clone https://github.com/GetSoloTech/solo-server.git
-cd solo-server
-uv pip install -e .
-
-# Solo commands
-solo --help
-```
-
-Alternatively, you can perform a quick, automated installation for Mac.
+Use node version 18. Install with nvm.
 
 ```
-# Clone the repository
-git clone https://github.com/GetSoloTech/solo-server.git
-cd solo-server
-
-# Make the installation script executable
-chmod +x install_mac.sh
-
-# Run the automated installation
-./install_mac.sh
+npm i -g mintlify
 ```
+
+Run the following command at the root of your documentation (where mint.json is)
+
+```
+mintlify dev
+```
+
+To learn how to format the pages and what blocks you can use, [check out the Mintlify docs.](https://mintlify.com/docs/so-100/quickstart)
+
+### Troubleshooting
+
+- `mintlify dev` doesn't run - try `npx mintlify dev`
+- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
+- Page loads as a 404 - Make sure you are running in a folder with `mint.json`

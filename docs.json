@@ -16,14 +16,13 @@
           {
             "group": "Get Started",
             "pages": [
-              "index",
-              "GetStarted"
+              "intro",
+              "uv-env"
             ]
           },
           {
             "group": "Setup",
             "pages": [
-              "uv-env",
               "installation",
               "development"
             ]

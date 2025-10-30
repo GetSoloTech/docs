@@ -16,3 +16,19 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ```powershell
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
+
+**Create Python virtual environment, recommended Python version 3.12**
+
+```bash
+uv venv --python 3.12
+```
+
+**Mac & Linux**
+```bash
+source .venv/bin/activate
+```
+
+**Windows**
+```bash
+source .venv/scripts/activate
+```
